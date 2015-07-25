@@ -8,8 +8,8 @@
     $resultado = mysql_query($query);
     if (mysql_num_rows($resultado) == 1){
         $fila = mysql_fetch_array($resultado);
-		$_SESSION['userweb'] = $fila['user'];
-        echo "Has iniciado sesion, ".$fila['user'];
+		    $_SESSION['userweb'] = $fila['user'];
+        echo "Has iniciado sesion, " .$user;
         echo '<meta http-equiv="Refresh" content="5;url=main.php">';
     }else{
         echo "Login incorrecto";
