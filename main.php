@@ -4,7 +4,7 @@
   </head>
   <body>
     <?php
-    if(!isset($_SESSION['userweb']))
+    if(isset($_SESSION['userweb']))
     {
     ?>
         <h1>Bienvenido</h1>
