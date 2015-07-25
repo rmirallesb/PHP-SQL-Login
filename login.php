@@ -1,4 +1,5 @@
 <?php
+    session_start();
     mysql_connect('localhost','root','mysql');
     $db = "bcdatabase";
     mysql_select_db($db);
